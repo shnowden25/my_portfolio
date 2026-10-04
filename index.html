@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daquan Dowell - Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 8rem 0;
+        }
+        
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+        }
+        
+        .about {
+            background-color: #f8f9fa;
+        }
+        
+        .about h2,
+        .skills h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+        
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .skill-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-card ul {
+            list-style: none;
+            text-align: left;
+        }
+        
+        .skill-card li {
+            padding: 0.5rem 0;
+            color: #555;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        .experience-item,
+        .education-item {
+            margin-bottom: 2rem;
+            border-left: 4px solid #667eea;
+            padding-left: 1.5rem;
+        }
+        
+        .experience-item h3,
+        .education-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-item .date,
+        .education-item .date {
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-item ul,
+        .education-item ul {
+            margin-left: 1rem;
+            color: #555;
+        }
+        
+        .experience-item li,
+        .education-item li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <h1>Daquan Dowell</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Software Engineer | Full Stack Developer | Open Source Contributor</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm a Software Engineer with a passion for building scalable applications and contributing to open source projects. 
+                I bring precision and problem-solving expertise from my background in structural fabrication, applying those same principles 
+                to debugging, code optimization, and software development lifecycles. I'm committed to continuous learning and staying at the 
+                forefront of modern development practices.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Object-Oriented Programming</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend & APIs</h3>
+                    <ul>
+                        <li>RESTful APIs</li>
+                        <li>Express.js</li>
+                        <li>Firebase Authentication</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>DevOps & Cloud</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>CI/CD Pipeline Automation</li>
+                        <li>AWS Cloud</li>
+                        <li>Google Cloud Platform</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Deployment & Tools</h3>
+                    <ul>
+                        <li>Linux</li>
+                        <li>GitHub Actions</li>
+                        <li>Vercel Deployment</li>
+                        <li>Docker & Kubernetes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Experience Section -->
+    <section class="experience" id="experience" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>Technical Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Google Cloud Arcade Workshop</h3>
+                <div class="date">May 2024</div>
+                <ul>
+                    <li>Completed hands-on labs involving cloud storage, compute instances, and Kubernetes clusters via Google Cloud Skills Boost</li>
+                    <li>Built and deployed a scalable web app using Google App Engine and monitored it using Cloud Monitoring and Logging</li>
+                    <li>Earned a digital badge for "Cloud Engineering Fundamentals" issued by Google Cloud</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Hacktoberfest (GitHub / DigitalOcean) - Open Source Contributor</h3>
+                <div class="date">October 2023</div>
+                <ul>
+                    <li>Contributed to open source repositories in Python and JavaScript by resolving issues, writing unit tests, and improving documentation</li>
+                    <li>Participated in community discussions and used Git to manage forks, branches, and pull requests</li>
+                    <li>Successfully completed 5 merged pull requests, earning official Hacktoberfest 2023 contributor recognition</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Hack the North - Hackathon Participant</h3>
+                <div class="date">September 2023</div>
+                <ul>
+                    <li>Collaborated in a 36-hour hackathon to build a productivity web app using React, Express.js, and MongoDB</li>
+                    <li>Implemented user authentication using Firebase and deployed the project to Vercel with continuous integration via GitHub Actions</li>
+                    <li>Presented the app to a panel of judges and received positive feedback for intuitive UI and backend reliability</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="experience" id="work">
+        <div class="container">
+            <h2>Work Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Welder</h3>
+                <div style="font-weight: bold; color: #2c3e50;">Total Fab Easter Metal</div>
+                <div class="date">June 2023 - Present</div>
+                <ul>
+                    <li>Applied precision measurement and process-driven execution in structural fabrication—skills transferable to debugging, code optimization, and software development lifecycles</li>
+                    <li>Operated heavy machinery (e.g., 5-ton crane) and performed complex metalworking tasks (MIG/ARC welding, drilling, cutting) while ensuring strict adherence to safety and quality standards</li>
+                    <li>Demonstrated strong problem-solving and technical execution in a fast-paced industrial environment</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="experience" id="education" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>Education & Coursework</h2>
+            
+            <div class="education-item">
+                <h3>App Academy - Jumpstart Program</h3>
+                <div class="date">2018 - 2019</div>
+            </div>
+            
+            <div class="education-item">
+                <h3>CDA Technical Institute - Maritime Safety</h3>
+                <div class="date">2019 - 2020</div>
+            </div>
+            
+            <h3 style="margin-top: 2rem; color: #2c3e50;">Relevant Coursework</h3>
+            <div class="education-item">
+                <ul>
+                    <li>Harvard CS50</li>
+                    <li>Google's Python Class</li>
+                    <li>AWS Cloud Practitioner Essentials</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section style="background-color: white; padding: 4rem 0;">
+        <div class="container">
+            <h2 style="color: #2c3e50; margin-bottom: 1.5rem;">Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:shasmoove25@ymail.com">shasmoove25@ymail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>🔗</span>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <span>🐙</span>
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>USA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Daquan Dowell. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
